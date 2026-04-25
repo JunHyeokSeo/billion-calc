@@ -46,4 +46,4 @@
 
 ## 8. 연락처
 
-문의사항: westjh@ex-em.com
+문의사항: sjhgd107@naver.com

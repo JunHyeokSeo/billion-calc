@@ -69,4 +69,4 @@ open BillionCalc.xcodeproj
 
 ## 라이선스
 
-Private. 상업 배포 전 문의: westjh@ex-em.com
+Private. 상업 배포 전 문의: sjhgd107@naver.com

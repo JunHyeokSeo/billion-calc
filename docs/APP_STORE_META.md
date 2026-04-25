@@ -147,7 +147,7 @@ No account required, all data stays on device.
 Please use the default values provided on first launch to explore.
 
 Demo account: N/A (no login required)
-Contact: westjh@ex-em.com
+Contact: sjhgd107@naver.com
 ```
 
 ---
