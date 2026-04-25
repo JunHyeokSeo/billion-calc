@@ -15,6 +15,7 @@ public struct SharedStorage {
         static let onboardingCompleted = "onboardingCompleted"
         static let lastConfirmedMonth = "lastConfirmedMonth"
         static let monthlyIncomeForRatio = "monthlyIncomeForRatio"
+        static let colorSchemePreference = "colorSchemePreference"
     }
 
     public let defaults: UserDefaults
@@ -109,6 +110,20 @@ public struct SharedStorage {
         }
     }
 
+    // MARK: - Color scheme preference
+
+    /// Raw stored value: "system", "light", "dark". `nil` means follow system (default).
+    public var colorSchemePreference: String? {
+        get { defaults.string(forKey: Key.colorSchemePreference) }
+        nonmutating set {
+            if let value = newValue {
+                defaults.set(value, forKey: Key.colorSchemePreference)
+            } else {
+                defaults.removeObject(forKey: Key.colorSchemePreference)
+            }
+        }
+    }
+
     // MARK: - Reset (debug/onboarding)
 
     public func resetAll() {
@@ -118,6 +133,8 @@ public struct SharedStorage {
         defaults.removeObject(forKey: Key.onboardingCompleted)
         defaults.removeObject(forKey: Key.lastConfirmedMonth)
         defaults.removeObject(forKey: Key.monthlyIncomeForRatio)
+        // Color scheme preference is intentionally preserved across resets
+        // (it's a UI preference, not user data).
     }
 }
 

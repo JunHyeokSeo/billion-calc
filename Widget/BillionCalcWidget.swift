@@ -62,14 +62,49 @@ struct BillionCalcWidget: Widget {
 
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: BillionCalcProvider()) { entry in
+            WidgetRoot(entry: entry)
+        }
+        .configurationDisplayName("1억 계산기")
+        .description("목표 금액까지 남은 개월 수와 진행률을 확인하세요")
+        .supportedFamilies([.systemSmall, .systemMedium])
+    }
+}
+
+/// Wrapping view that honors the user's color-scheme preference even when it
+/// differs from the iOS system appearance. We have to set both
+/// `\.colorScheme` (so SwiftUI semantic colors resolve correctly) AND an
+/// explicit container background color, because `Color(.systemBackground)` is
+/// resolved via the iOS UITraitCollection and ignores the SwiftUI override.
+private struct WidgetRoot: View {
+    let entry: BillionCalcEntry
+
+    @ViewBuilder
+    var body: some View {
+        if let scheme = widgetColorSchemeOverride() {
+            BillionCalcWidgetView(entry: entry)
+                .environment(\.colorScheme, scheme)
+                .containerBackground(for: .widget) {
+                    scheme == .dark
+                        ? Color(red: 0.11, green: 0.11, blue: 0.118)   // ~ systemBackground.dark
+                        : Color.white
+                }
+        } else {
             BillionCalcWidgetView(entry: entry)
                 .containerBackground(for: .widget) {
                     Color(.systemBackground)
                 }
         }
-        .configurationDisplayName("1억 계산기")
-        .description("목표 금액까지 남은 D-Day와 진행률을 확인하세요")
-        .supportedFamilies([.systemSmall, .systemMedium])
+    }
+}
+
+/// Reads the user's color-scheme preference from the App Group.
+/// `nil` means the widget follows the iOS system appearance.
+private func widgetColorSchemeOverride() -> ColorScheme? {
+    let storage = SharedStorage(defaults: SharedStorage.defaultAppGroup)
+    switch storage.colorSchemePreference {
+    case "light": return .light
+    case "dark":  return .dark
+    default:      return nil
     }
 }
 

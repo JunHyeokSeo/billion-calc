@@ -1,6 +1,30 @@
 import SwiftUI
 import BillionCalcCore
 
+// MARK: - User-selectable color scheme
+
+enum AppColorScheme: String, CaseIterable, Identifiable {
+    case system, light, dark
+    var id: String { rawValue }
+
+    var label: String {
+        switch self {
+        case .system: return "시스템"
+        case .light:  return "라이트"
+        case .dark:   return "다크"
+        }
+    }
+
+    /// `nil` = follow system, otherwise force the given scheme.
+    var swiftUI: ColorScheme? {
+        switch self {
+        case .system: return nil
+        case .light:  return .light
+        case .dark:   return .dark
+        }
+    }
+}
+
 // MARK: - Theme tokens
 
 enum AppTheme {
@@ -299,6 +323,7 @@ private struct EditableNumberButton: View {
 struct TargetAmountSlider: View {
     @Binding var value: Decimal
     @State private var showEditor = false
+    @Environment(\.colorScheme) private var currentScheme
 
     static let minValue: Double = 0
     static let maxValue: Double = 300_000_000     // 3억
@@ -343,6 +368,7 @@ struct TargetAmountSlider: View {
                 maxValue: Self.maxValue,
                 step: Self.step
             )
+            .preferredColorScheme(currentScheme)
         }
     }
 }
@@ -354,6 +380,7 @@ struct AmountSlider: View {
     let maxValue: Double
     let step: Double
     @State private var showEditor = false
+    @Environment(\.colorScheme) private var currentScheme
 
     private var doubleBinding: Binding<Double> {
         Binding(
@@ -394,6 +421,7 @@ struct AmountSlider: View {
                 maxValue: maxValue,
                 step: step
             )
+            .preferredColorScheme(currentScheme)
         }
     }
 }
@@ -404,6 +432,7 @@ struct PercentSlider: View {
     var range: ClosedRange<Double> = 0...15
     var step: Double = 0.1
     @State private var showEditor = false
+    @Environment(\.colorScheme) private var currentScheme
 
     private var tickKey: Int { Int((value / step).rounded()) }
 
@@ -436,6 +465,7 @@ struct PercentSlider: View {
                 range: range,
                 step: step
             )
+            .preferredColorScheme(currentScheme)
         }
     }
 }

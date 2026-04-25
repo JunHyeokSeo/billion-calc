@@ -46,6 +46,18 @@ struct SettingsView: View {
                     }
 
                     SectionCard {
+                        Text("화면 모드")
+                            .font(.caption)
+                            .foregroundStyle(AppTheme.secondaryText)
+                        Picker("화면 모드", selection: $viewModel.colorScheme) {
+                            ForEach(AppColorScheme.allCases) { scheme in
+                                Text(scheme.label).tag(scheme)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                    }
+
+                    SectionCard {
                         Text("위젯")
                             .font(.caption)
                             .foregroundStyle(AppTheme.secondaryText)

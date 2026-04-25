@@ -10,6 +10,7 @@ struct BillionCalcApp: App {
             RootView()
                 .environmentObject(viewModel)
                 .tint(AppTheme.accent)
+                .preferredColorScheme(viewModel.colorScheme.swiftUI)
         }
     }
 }

@@ -8,6 +8,12 @@ final class AppViewModel: ObservableObject {
     @Published private(set) var goal: SavingsGoal
     @Published private(set) var deposits: [MonthlyDeposit]
     @Published var onboardingCompleted: Bool
+    @Published var colorScheme: AppColorScheme {
+        didSet {
+            storage.colorSchemePreference = colorScheme.rawValue
+            reloadWidget()
+        }
+    }
 
     private let storage: SharedStorage
 
@@ -16,6 +22,7 @@ final class AppViewModel: ObservableObject {
         self.goal = storage.loadGoal() ?? .empty
         self.deposits = storage.loadDeposits()
         self.onboardingCompleted = storage.onboardingCompleted
+        self.colorScheme = AppColorScheme(rawValue: storage.colorSchemePreference ?? "") ?? .system
     }
 
     // MARK: - Computed

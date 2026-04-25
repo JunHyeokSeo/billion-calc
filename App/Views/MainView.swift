@@ -29,10 +29,12 @@ struct MainView: View {
             .sheet(isPresented: $showSettings) {
                 SettingsView()
                     .environmentObject(viewModel)
+                    .preferredColorScheme(viewModel.colorScheme.swiftUI)
             }
             .sheet(isPresented: $showDepositAdjustment) {
                 DepositAdjustmentView(yearMonth: viewModel.currentYearMonth)
                     .environmentObject(viewModel)
+                    .preferredColorScheme(viewModel.colorScheme.swiftUI)
             }
             .onAppear { loadMotivation() }
             .onChange(of: viewModel.goal) { _, _ in loadMotivation() }
