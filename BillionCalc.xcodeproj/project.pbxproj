@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0683DE127A99EEE585AF3414 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958AC05E0981711025ECC41 /* SettingsView.swift */; };
+		17CB5D5492E44D2040FF267A /* BillionCalcCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9628CDAEF5A66A0CA6187D6C /* BillionCalcCore */; };
+		1941678CD9AC44322F01243D /* BillionCalcWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9A4EAB2706D93A0B905D49 /* BillionCalcWidget.swift */; };
+		19ED4A2A40BED01504FED384 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C117994D4DFC50BF9FE4B203 /* AppTheme.swift */; };
+		20264C19FFD048F8A4B95A6B /* DepositAdjustmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC82E559253D2ADE1628A5BD /* DepositAdjustmentView.swift */; };
+		38213D17286275FF51B36589 /* BillionCalcWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 77AC054309C3CB15AADC2AF1 /* BillionCalcWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BF209D91716D115E9D6D470 /* BillionCalcWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A706C9FC15DAF7B161C9EA /* BillionCalcWidgetBundle.swift */; };
+		5B9AAF2ABC932B99771FB367 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75485DA091265299C6F7618B /* AppViewModel.swift */; };
+		8A61B035F90F587851346514 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCA4175A4303ED528CD9056 /* Assets.xcassets */; };
+		97A5E92C5F65A569B7E8ED69 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DC22022729EA6B486933A1 /* MainView.swift */; };
+		C0FE5A2AEEF27F15102DB26B /* BillionCalcCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2B2C4FFDD092B93A67B0D8CA /* BillionCalcCore */; };
+		EFD3F3711AF37AE287A9E7BC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3DBE09479A7F9F9D3612EA /* OnboardingView.swift */; };
+		F43999F022864E0F8C817D96 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C32C692A14094137F929E85E /* PrivacyInfo.xcprivacy */; };
+		FBD19CBF8FA457EAE2E5F487 /* BillionCalcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939ED6D8B2C72F942626F11C /* BillionCalcApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F2C1816A88E5E5890B9B2DA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65E9603D659A560E411B0C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17FEF91CDA3DE58F6CC2F9B8;
+			remoteInfo = BillionCalcWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD461F0CA674CA95B9D59C42 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				38213D17286275FF51B36589 /* BillionCalcWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		28A706C9FC15DAF7B161C9EA /* BillionCalcWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillionCalcWidgetBundle.swift; sourceTree = "<group>"; };
+		35C897AF768C7137DD2C447D /* BillionCalc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BillionCalc.entitlements; sourceTree = "<group>"; };
+		3958AC05E0981711025ECC41 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4C9A4EAB2706D93A0B905D49 /* BillionCalcWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillionCalcWidget.swift; sourceTree = "<group>"; };
+		4F3DBE09479A7F9F9D3612EA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		75485DA091265299C6F7618B /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		77AC054309C3CB15AADC2AF1 /* BillionCalcWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BillionCalcWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		939ED6D8B2C72F942626F11C /* BillionCalcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillionCalcApp.swift; sourceTree = "<group>"; };
+		9C06B43166111596DB4FB5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B7DC22022729EA6B486933A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C117994D4DFC50BF9FE4B203 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		C32C692A14094137F929E85E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		C7481A60261712F314A91E95 /* BillionCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillionCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCA4175A4303ED528CD9056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D983BBE8D6A63B42E6031935 /* BillionCalc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BillionCalc; path = .; sourceTree = SOURCE_ROOT; };
+		E3D5318B0EBB1FBE1BF45D3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E868A64046C9B7DD7E729D41 /* BillionCalcWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BillionCalcWidget.entitlements; sourceTree = "<group>"; };
+		EC82E559253D2ADE1628A5BD /* DepositAdjustmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositAdjustmentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7729715B67FE31DC90F64B65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17CB5D5492E44D2040FF267A /* BillionCalcCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BE746CD4AB761EEA24C9205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FE5A2AEEF27F15102DB26B /* BillionCalcCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46A2E1A054286F6532B94906 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBCA4175A4303ED528CD9056 /* Assets.xcassets */,
+				35C897AF768C7137DD2C447D /* BillionCalc.entitlements */,
+				9C06B43166111596DB4FB5A8 /* Info.plist */,
+				C32C692A14094137F929E85E /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5B772A3998D94F092D1CC76B /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E868A64046C9B7DD7E729D41 /* BillionCalcWidget.entitlements */,
+				4C9A4EAB2706D93A0B905D49 /* BillionCalcWidget.swift */,
+				28A706C9FC15DAF7B161C9EA /* BillionCalcWidgetBundle.swift */,
+				E3D5318B0EBB1FBE1BF45D3E /* Info.plist */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		93C862CAC55F9CF16825DAF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7481A60261712F314A91E95 /* BillionCalc.app */,
+				77AC054309C3CB15AADC2AF1 /* BillionCalcWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9753532C7AA429CAE774CC0F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C117994D4DFC50BF9FE4B203 /* AppTheme.swift */,
+				75485DA091265299C6F7618B /* AppViewModel.swift */,
+				939ED6D8B2C72F942626F11C /* BillionCalcApp.swift */,
+				46A2E1A054286F6532B94906 /* Resources */,
+				B141A7501A99D05B29F4E0C9 /* Storage */,
+				BA10CCAD03A30960849E07D5 /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B141A7501A99D05B29F4E0C9 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		B31FA36CD177436D62738E0C = {
+			isa = PBXGroup;
+			children = (
+				9753532C7AA429CAE774CC0F /* App */,
+				B32CEDEB6E3EF80768774824 /* Packages */,
+				5B772A3998D94F092D1CC76B /* Widget */,
+				93C862CAC55F9CF16825DAF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B32CEDEB6E3EF80768774824 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				D983BBE8D6A63B42E6031935 /* BillionCalc */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		BA10CCAD03A30960849E07D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC82E559253D2ADE1628A5BD /* DepositAdjustmentView.swift */,
+				B7DC22022729EA6B486933A1 /* MainView.swift */,
+				4F3DBE09479A7F9F9D3612EA /* OnboardingView.swift */,
+				3958AC05E0981711025ECC41 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02F8531253A092D20E4EBAC7 /* BillionCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2C2A8AAB863F20F969842EF /* Build configuration list for PBXNativeTarget "BillionCalc" */;
+			buildPhases = (
+				0C06D136870F4B5B0C9D24C8 /* Sources */,
+				F090C9440BF206CD6DDB86CF /* Resources */,
+				7729715B67FE31DC90F64B65 /* Frameworks */,
+				BD461F0CA674CA95B9D59C42 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5FDB81A67592AE65440443D /* PBXTargetDependency */,
+			);
+			name = BillionCalc;
+			packageProductDependencies = (
+				9628CDAEF5A66A0CA6187D6C /* BillionCalcCore */,
+			);
+			productName = BillionCalc;
+			productReference = C7481A60261712F314A91E95 /* BillionCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17FEF91CDA3DE58F6CC2F9B8 /* BillionCalcWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCF22D37F9CBAF6DB95E46D9 /* Build configuration list for PBXNativeTarget "BillionCalcWidget" */;
+			buildPhases = (
+				5593F07630553C494AA80B00 /* Sources */,
+				8BE746CD4AB761EEA24C9205 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillionCalcWidget;
+			packageProductDependencies = (
+				2B2C4FFDD092B93A67B0D8CA /* BillionCalcCore */,
+			);
+			productName = BillionCalcWidget;
+			productReference = 77AC054309C3CB15AADC2AF1 /* BillionCalcWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65E9603D659A560E411B0C60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					02F8531253A092D20E4EBAC7 = {
+						ProvisioningStyle = Automatic;
+					};
+					17FEF91CDA3DE58F6CC2F9B8 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7DBF63A266A013447BF72F06 /* Build configuration list for PBXProject "BillionCalc" */;
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ko,
+			);
+			mainGroup = B31FA36CD177436D62738E0C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4B64CA096D52622B6B4A3475 /* XCLocalSwiftPackageReference "." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 93C862CAC55F9CF16825DAF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02F8531253A092D20E4EBAC7 /* BillionCalc */,
+				17FEF91CDA3DE58F6CC2F9B8 /* BillionCalcWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F090C9440BF206CD6DDB86CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A61B035F90F587851346514 /* Assets.xcassets in Resources */,
+				F43999F022864E0F8C817D96 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C06D136870F4B5B0C9D24C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19ED4A2A40BED01504FED384 /* AppTheme.swift in Sources */,
+				5B9AAF2ABC932B99771FB367 /* AppViewModel.swift in Sources */,
+				FBD19CBF8FA457EAE2E5F487 /* BillionCalcApp.swift in Sources */,
+				20264C19FFD048F8A4B95A6B /* DepositAdjustmentView.swift in Sources */,
+				97A5E92C5F65A569B7E8ED69 /* MainView.swift in Sources */,
+				EFD3F3711AF37AE287A9E7BC /* OnboardingView.swift in Sources */,
+				0683DE127A99EEE585AF3414 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5593F07630553C494AA80B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1941678CD9AC44322F01243D /* BillionCalcWidget.swift in Sources */,
+				3BF209D91716D115E9D6D470 /* BillionCalcWidgetBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5FDB81A67592AE65440443D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17FEF91CDA3DE58F6CC2F9B8 /* BillionCalcWidget */;
+			targetProxy = F2C1816A88E5E5890B9B2DA7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15810C591ECC9108C1F346B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/Resources/BillionCalc.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TWS5756L96;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.westjh.billion-calc";
+				PRODUCT_NAME = BillionCalc;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1797ADF1E2495D77AFA5444D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/BillionCalcWidget.entitlements;
+				DEVELOPMENT_TEAM = TWS5756L96;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.westjh.billion-calc.widget";
+				PRODUCT_NAME = BillionCalcWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		503B8E505D88FBE9D2500371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		612719B5BD7B292248A9394D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Widget/BillionCalcWidget.entitlements;
+				DEVELOPMENT_TEAM = TWS5756L96;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.westjh.billion-calc.widget";
+				PRODUCT_NAME = BillionCalcWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B755184C5CF6D82CDA800E0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		D27C6D885072B4C7978D6B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/Resources/BillionCalc.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TWS5756L96;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = App/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.westjh.billion-calc";
+				PRODUCT_NAME = BillionCalc;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DBF63A266A013447BF72F06 /* Build configuration list for PBXProject "BillionCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B755184C5CF6D82CDA800E0A /* Debug */,
+				503B8E505D88FBE9D2500371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F2C2A8AAB863F20F969842EF /* Build configuration list for PBXNativeTarget "BillionCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15810C591ECC9108C1F346B0 /* Debug */,
+				D27C6D885072B4C7978D6B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FCF22D37F9CBAF6DB95E46D9 /* Build configuration list for PBXNativeTarget "BillionCalcWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1797ADF1E2495D77AFA5444D /* Debug */,
+				612719B5BD7B292248A9394D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4B64CA096D52622B6B4A3475 /* XCLocalSwiftPackageReference "." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = .;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B2C4FFDD092B93A67B0D8CA /* BillionCalcCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BillionCalcCore;
+		};
+		9628CDAEF5A66A0CA6187D6C /* BillionCalcCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BillionCalcCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 65E9603D659A560E411B0C60 /* Project object */;
+}
