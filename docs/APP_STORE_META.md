@@ -98,9 +98,9 @@
 
 | 항목 | URL | 비고 |
 |---|---|---|
-| **Support URL** | https://westjh.github.io/billion-calc/support | GitHub Pages 한 장으로 작성 가능 |
-| **Marketing URL (선택)** | (생략 가능) | v1.0 생략 권장 |
-| **Privacy Policy URL** | https://westjh.github.io/billion-calc/privacy | 필수. `PRIVACY_POLICY.md` 를 GitHub Pages에 배포 |
+| **Support URL** | https://junhyeokseo.github.io/billion-calc/support.html | 라이브 |
+| **Marketing URL (선택)** | https://junhyeokseo.github.io/billion-calc/ | 랜딩 페이지 |
+| **Privacy Policy URL** | https://junhyeokseo.github.io/billion-calc/privacy.html | 라이브, 필수 |
 
 ---
 
@@ -125,13 +125,18 @@
 
 **6.7인치 (iPhone 15 Pro Max / 14 Pro Max / 16 Pro Max)** - **필수**
 
-최소 3장, 최대 10장. 권장 5장:
+현재 `docs/screenshots/`에 8장 캡처 완료. App Store Connect 업로드 순서:
 
-1. **메인 화면** — "47개월 남음" 큰 숫자 + 진행률 + 저축 여정 카드
-2. **월 입금 조정** — 드래그 상태 + 계획 대비 +50만원 표시
-3. **만약에 시뮬레이션** — What-if 슬라이더 + "7개월 단축"
-4. **설정 / 슬라이더 입력** — 목표·현재·월저축 슬라이더 + 탭-투-에디트
-5. **위젯** — 홈 화면에 Small + Medium 위젯 (Activity Ring 스타일)
+1. **01-main-complete.png** — 달성 100% 메인뷰 (비전, 첫 인상)
+2. **02-widget-complete.png** — 위젯 달성 화면 (홈스크린 컨텍스트)
+3. **03-widget-progress.png** — 위젯 진행 중 (30개월, 55%)
+4. **04-main-default.png** — 메인뷰 시작 단계 (100개월)
+5. **05-settings.png** — 설정 슬라이더 입력
+6. **06-onboarding-input.png** — 온보딩 목표 입력
+7. **07-onboarding-features.png** — 기능 소개
+8. **08-onboarding-welcome.png** — 환영 (보너스)
+
+iPhone 17 Pro Max (6.9") 1320×2868 — App Store 6.9" 슬롯 호환.
 
 **6.5인치 (iPhone 11 Pro Max 등)** - 선택, 같은 화면 재활용 가능.
 
